@@ -1,0 +1,105 @@
+/* mobile */
+@media (max-width: 739px) {
+    .player{
+        flex-direction: column;
+        width: 300px;
+        height: 550px;
+        align-items: center;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    /* .header-list{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    } */
+    .playlist {
+        width: 300px;
+        height: 276px;
+        left: 0;
+        top: 31%;
+        border-radius: 35px;
+    }
+    .content {
+        width: 300px;
+
+    }
+
+    .content .name-music {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .image{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .image .image-thumb{
+        width: 200px;
+        height: 200px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    .header-list {
+        padding: 10px;
+        position: absolute;
+        right: 8px;
+        bottom: 42%;
+    }
+
+    .content .name-music {
+        font-size: 22px;
+        margin-top: 70px;
+    }
+
+    .volume-bar {
+        left: 79%;
+    }
+
+
+
+    header .list-music--icon{
+        display: none;
+        
+    }
+    
+    .btn-random, .prev, .btn-toggle-play, .next {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .options {
+        margin: 0;
+    }
+
+    .content{
+        margin-top: 20px;
+    }
+
+    .content .time-range {
+        margin-bottom: 10px;
+    }
+    .song {
+        justify-content: center;
+    }
+    .song .image {
+        display: none;
+    }
+
+    .song .info .name{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .song .info .author {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+}

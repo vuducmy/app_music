@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="heading">MUSIC PLAYER</h1>
+        <div class="player">
+            <div class="image">
+                <div class="image-thumb" style="background-image: url(./assets/img/fallBack.jpg);">
+                </div>
+            </div>
+
+            <div class="content">
+                <header>
+                    <h3 class="list-music--icon">
+                        <span>List music</span>   
+                        <i class="fa-solid fa-arrow-right"></i>                     
+                    </h3>
+                    <div class="header-list">
+                        <i class="fa-solid fa-music icon-playlist"></i>
+                    </div>
+                </header>
+                <h1 class="name-music">Money</h1>
+                <p class="author">Lalisa Manoban</p>
+                <div class="progress-wrap">
+                    <input type="range" id="progress" class="input-range" value="0" step="1" min="0" max="100">              
+                    <div class="time-range">
+                        <span class="time-current">00:00</span>
+                        <span class="time-end">00:00</span>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div class="prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn-toggle-play">
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                        <i class="fa-solid fa-play icon-play"></i>
+                    </div>
+                    <div class="next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+
+                    <div class="btn-volume">
+                        <i class="fa-solid fa-volume-xmark icon-mute"></i>
+                        <i class="fa-solid fa-volume-high icon-not-mute"></i>                      
+                    </div>
+                    <input type="range" class="volume-bar hide" value="1" step="0.1" min="0" max="1" title="Âm lượng 100%">
+                </div>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="playlist hide">
+            <div class="song">
+                <div class="image" style="background-image: url('');">
+                </div>
+
+                <div class="info">
+                    <h3 class="name">Tận Cùng Nỗi Nhớ</h3>
+                    <p class="author">Will...</p>
+                </div>
+                <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
